@@ -1,0 +1,9 @@
+{% if filme_all%}
+<ul>
+    {% for film in filme_all %}
+    <li><a href="/cineted/{{ film.titulo }}">{{ film.titulo }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    <h4>Não existem filmes registrados</h4>
+{% endif %}
